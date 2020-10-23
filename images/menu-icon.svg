@@ -1,40 +1,9 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
-<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 150 150" style="enable-background:new 0 0 150 150;" xml:space="preserve">
-<g id="XMLID_240_">
-	<path id="XMLID_241_" d="M15,30h120c8.284,0,15-6.716,15-15s-6.716-15-15-15H15C6.716,0,0,6.716,0,15S6.716,30,15,30z"/>
-	<path id="XMLID_242_" d="M135,60H15C6.716,60,0,66.716,0,75s6.716,15,15,15h120c8.284,0,15-6.716,15-15S143.284,60,135,60z"/>
-	<path id="XMLID_243_" d="M135,120H15c-8.284,0-15,6.716-15,15s6.716,15,15,15h120c8.284,0,15-6.716,15-15S143.284,120,135,120z"/>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 150 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g id="XMLID_240_">
+        <path id="XMLID_241_" d="M15,30L135,30C143.284,30 150,23.284 150,15C150,6.716 143.284,0 135,0L15,0C6.716,0 0,6.716 0,15C0,23.284 6.716,30 15,30Z" style="fill:rgb(98,122,149);fill-rule:nonzero;"/>
+        <path id="XMLID_242_" d="M135,60L15,60C6.716,60 0,66.716 0,75C0,83.284 6.716,90 15,90L135,90C143.284,90 150,83.284 150,75C150,66.716 143.284,60 135,60Z" style="fill:rgb(98,122,149);fill-rule:nonzero;"/>
+        <path id="XMLID_243_" d="M135,120L15,120C6.716,120 0,126.716 0,135C0,143.284 6.716,150 15,150L135,150C143.284,150 150,143.284 150,135C150,126.716 143.284,120 135,120Z" style="fill:rgb(98,122,149);fill-rule:nonzero;"/>
+    </g>
 </svg>

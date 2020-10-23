@@ -13,7 +13,8 @@
     --button-hover: #2455ff;
 }
 
-body{
+html, body{
+    height: 100%;
     font-family: 'Nunito', sans-serif;
 }
 
@@ -25,13 +26,13 @@ body{
 /*  */
 
 header{
-    padding: 20px 0;
+    padding: 20px 2%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-header img{
+header .logo{
     width: 150px;
 }
 
@@ -49,6 +50,13 @@ header .menu a{
     transition: 0.8s;
 }
 
+header .icon-menu{
+    width: 35px;
+    height: 35px;
+    display: none;
+    cursor: pointer;
+}
+
 header .menu a:hover{
     color: var(--link-hover);
     position: relative;
@@ -58,6 +66,7 @@ header .menu a:hover{
 main#home{
     display: flex;
     justify-content: space-around;
+    margin: 0 2%;
 }
 
 main#home .presentation{
@@ -69,13 +78,13 @@ main#home .presentation{
 main#home .presentation h1{
     margin-top: 5rem;
     margin-bottom: 20px;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 main#home .presentation p{
     margin-bottom: 15px;
     max-width: 550px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 main#home .presentation a{
@@ -98,4 +107,32 @@ main#home .presentation img{
 
 main#home img{
     width: 500px;
+}
+
+
+@media screen and (max-width: 800px){
+    header{
+        padding: 5px 2% 20px 2%;
+    }
+
+    header .menu{
+        margin-top: 20px;
+        display: none;
+    }
+
+    header .icon-menu{
+        display: block;
+    }
+
+    main#home{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main#home .presentation{
+        align-items: center;
+        margin-bottom: 5rem;
+        text-align: center;
+    }
 }
