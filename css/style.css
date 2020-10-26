@@ -25,69 +25,54 @@ html, body{
 
 /*  */
 
+
+
+
+/* header */
+
 header{
     padding: 20px 2%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 header .logo{
     width: 150px;
 }
 
-header .menu{
-    display: flex;
-    align-items: center;
-    list-style-type: none;
-}
+/*  */
 
-header .menu a{
-    font-size: 18px;
-    text-decoration: none;
-    color: var(--link-menu);
-    margin: 0 20px;
-    transition: 0.8s;
-}
 
-header .icon-menu{
-    width: 35px;
-    height: 35px;
-    display: none;
-    cursor: pointer;
-}
 
-header .menu a:hover{
-    color: var(--link-hover);
-    position: relative;
-    top: -2px;
-}
 
-main#home{
+/* main Home */
+
+main #home{
     display: flex;
     justify-content: space-around;
     margin: 0 2%;
 }
 
-main#home .presentation{
+main #home .presentation{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-main#home .presentation h1{
+main #home .presentation h1{
     margin-top: 5rem;
     margin-bottom: 20px;
     font-size: 40px;
 }
 
-main#home .presentation p{
+main #home .presentation p{
     margin-bottom: 15px;
     max-width: 550px;
     font-size: 20px;
 }
 
-main#home .presentation a{
+main #home .presentation a{
     text-decoration: none;
     color: white;
     background-color: var(--button);
@@ -96,43 +81,163 @@ main#home .presentation a{
     transition: 0.8s;
 }
 
-main#home .presentation a:hover{
+main #home .presentation a:hover{
     background-color: var(--button-hover);
 }
 
-main#home .presentation img{
+main #home .presentation img{
     width: 250px;
     margin-top: 1rem;
 }
 
-main#home img{
+main #home img{
     width: 500px;
 }
 
+/*  */
+
+
+
+
+
+
+
+
+
+
+/* main sobre */
+
+h1.title-sobre{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+
+main #sobre{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 0 2%;
+}
+
+main #sobre .introduction{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+} 
+
+main #sobre .introduction p{
+    max-width: 300px;
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
+
+main #sobre .introduction div{
+    width: 250px;
+    height: 250px;
+    background-color: #ccc;
+}
+
+main #sobre .introduction div img{
+    width: 100%;
+}
+
+main #sobre .introduction-courses{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main #sobre .introduction-courses h1{
+    margin-top: 10rem;
+    font-size: 26px;
+}
+
+main #sobre .introduction-courses  p{
+    max-width: 450px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+main #sobre .courses{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main #sobre .courses .card{
+    width: 430px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #627a95;
+    padding: 5px 10px;
+    margin-bottom: 20px;  
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+main #sobre .courses .card p{
+    display: none;
+}
+
+main #sobre .courses .card .card-name{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    /* flex-direction: row-reverse; */
+}
+
+main #sobre .courses .card img{
+    width: 125px;
+    height: 80px;
+}
+
+main #sobre .courses .card h1{
+    text-align: left;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+/* main #sobre .courses .card:nth-child(2n + 1) .card-name{
+    flex-direction: row;
+} */
+
+main #sobre .courses .card:hover{
+    border: 2px solid #44b7ff;
+}
+
+main #sobre .courses .card:hover p{
+    display: block;
+}
+/*  */
+
+
+
+/* Responsive */
 
 @media screen and (max-width: 800px){
     header{
         padding: 5px 2% 20px 2%;
     }
 
-    header .menu{
-        margin-top: 20px;
-        display: none;
-    }
-
-    header .icon-menu{
-        display: block;
-    }
-
-    main#home{
+    main #home{
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    main#home .presentation{
+    main #home .presentation{
         align-items: center;
         margin-bottom: 5rem;
         text-align: center;
     }
+
+    main #sobre .introduction{
+        flex-direction: column;
+    }
 }
+
+/*  */
