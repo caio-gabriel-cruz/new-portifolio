@@ -7,10 +7,10 @@
 }
 
 :root{
-    --link-menu: #627a95;
-    --link-hover: #2455ff;
-    --button: #627a95;
-    --button-hover: #2455ff;
+    --link-menu: #3f5d7d;
+    --link-hover: #1293e3;
+    --button: #3f5d7d;
+    --button-hover: #1293e3;
 }
 
 html, body{
@@ -46,7 +46,7 @@ header .logo{
 
 
 
-/* main Home */
+/* section Home */
 
 main #home{
     display: flex;
@@ -58,6 +58,7 @@ main #home .presentation{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    flex: .5;
 }
 
 main #home .presentation h1{
@@ -85,135 +86,196 @@ main #home .presentation a:hover{
     background-color: var(--button-hover);
 }
 
-main #home .presentation img{
-    width: 250px;
-    margin-top: 1rem;
-}
-
 main #home img{
-    width: 500px;
+    width: 400px;
 }
 
 /*  */
 
 
 
+/* section about */
 
-
-
-
-
-
-
-/* main sobre */
-
-h1.title-sobre{
+h1.title-about{
     text-align: center;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
+    font-size: 30px;
 }
 
 
-main #sobre{
+main #about{
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    margin: 0 2%;
+    margin-top: 8.5rem;
+    margin-right: 2%;
+    margin-left: 2%;
 }
 
-main #sobre .introduction{
+main #about .introduction{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-bottom: 3rem;
 } 
 
-main #sobre .introduction p{
-    max-width: 300px;
+main #about .introduction p{
+    width: 70%;
     font-size: 18px;
     margin-bottom: 1rem;
+    margin-right: 15px;
 }
 
-main #sobre .introduction div{
-    width: 250px;
-    height: 250px;
-    background-color: #ccc;
+main #about .introduction img{
+    width: 20rem
 }
 
-main #sobre .introduction div img{
-    width: 100%;
-}
-
-main #sobre .introduction-courses{
+main #about .introduction .text-about{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 
-main #sobre .introduction-courses h1{
-    margin-top: 10rem;
+main #about .introduction-courses{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+main #about .introduction-courses h1{
     font-size: 26px;
 }
 
-main #sobre .introduction-courses  p{
+main #about .introduction-courses  p{
     max-width: 450px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-main #sobre .courses{
+main #about .courses{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    margin-top: 3rem;
 }
 
-main #sobre .courses .card{
-    width: 430px;
+main #about .courses .card{
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     border: 1px solid #627a95;
     padding: 5px 10px;
     margin-bottom: 20px;  
     margin-right: 10px;
     margin-left: 10px;
+    max-width: 364px;
 }
 
-main #sobre .courses .card p{
+main #about .courses .content-card{
+    display: flex;
+}
+
+main #about .courses .card p{
     display: none;
 }
 
-main #sobre .courses .card .card-name{
+main #about .courses .card .card-name{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: row;
-    /* flex-direction: row-reverse; */
 }
 
-main #sobre .courses .card img{
-    width: 125px;
+main #about .courses .card img{
+    width: 115px;
     height: 80px;
 }
 
-main #sobre .courses .card h1{
+main #about .courses .card h1{
     text-align: left;
-    font-size: 18px;
-    margin-top: 30px;
+    font-size: 17px;
     margin-left: 20px;
 }
 
-/* main #sobre .courses .card:nth-child(2n + 1) .card-name{
-    flex-direction: row;
-} */
-
-main #sobre .courses .card:hover{
+main #about .courses .card:hover{
     border: 2px solid #44b7ff;
 }
 
-main #sobre .courses .card:hover p{
+main #about .courses .card:hover p{
     display: block;
 }
+
 /*  */
 
+
+
+/* section inspiration */
+
+main #inspiration img{
+    width: 20rem;
+}
+
+
+main #inspiration .content-inspiration{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    margin-top: 5rem;
+}
+
+main #inspiration .content-inspiration .text-inpiration{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 35px;
+}
+
+main #inspiration .content-inspiration .text-inpiration h1{
+    text-align: left;
+    margin-bottom: 3rem;
+}
+
+main #inspiration .content-inspiration .text-inpiration p{
+    max-width: 450px;
+    font-size: 20px;
+}
+
+main #inspiration .content-inspiration .text-inpiration a{
+    text-decoration: none;
+    padding: 10px 25px;
+    background-color: var(--button);
+    color: white;
+    border-radius: 5px;
+    margin-top: 25px;
+    transition: 0.8s;
+}
+
+main #inspiration .content-inspiration .text-inpiration a:hover{
+    background-color: var(--button-hover);
+}
+
+/*  */
+
+
+/* footer */
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    margin-top: 25px;
+}
+
+footer p{
+    font-size: 22px;
+}
+
+/*  */
 
 
 /* Responsive */
@@ -235,8 +297,29 @@ main #sobre .courses .card:hover p{
         text-align: center;
     }
 
-    main #sobre .introduction{
+    main #about .introduction{
         flex-direction: column;
+    }
+
+    main #inspiration .content-inspiration{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main #inspiration .content-inspiration img{
+        margin-bottom: 30px;
+    }
+
+    main #inspiration .content-inspiration .text-inpiration p{
+        text-align: center;
+    }
+
+    main #inspiration .content-inspiration .text-inpiration a{
+        margin-left: 30px;
+    }
+
+    main #home .presentation img{
+        display: none;
     }
 }
 
